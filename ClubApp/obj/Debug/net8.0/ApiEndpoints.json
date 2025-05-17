@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "ClubApp.Controllers.PlayersController",
+    "Method": "AddPlayersDb",
+    "RelativePath": "api/players/addPlayersToDb",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClubApp.Controllers.PlayersController",
+    "Method": "GetPlayers",
+    "RelativePath": "api/players/getPlayers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ClubApp",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/players/getPlayers": {
+      "get": {
+        "tags": [
+          "Players"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/players/addPlayersToDb": {
+      "get": {
+        "tags": [
+          "Players"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
