@@ -7,7 +7,7 @@ public partial class Budget
 {
     public int Id { get; set; }
 
-    public int? UserId { get; set; }
+    public string? UserId { get; set; }
 
     public double? MainBudget { get; set; }
 
@@ -15,5 +15,5 @@ public partial class Budget
 
     public byte[] UpdatedAt { get; set; } = null!;
 
-    public virtual User? User { get; set; }
+    public virtual ClubUserApp? User { get; set; }
 }

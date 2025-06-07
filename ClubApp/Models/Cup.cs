@@ -9,13 +9,13 @@ public partial class Cup
 
     public string? NameCup { get; set; }
 
-    public int? CreatedByUserId { get; set; }
+    public string? CreatedByUserId { get; set; }
 
     public byte[] CreatedAt { get; set; } = null!;
 
     public bool? Finished { get; set; }
 
-    public virtual User? CreatedByUser { get; set; }
+    public virtual ClubUserApp? CreatedByUser { get; set; }
 
     public virtual ICollection<Game> Games { get; set; } = new List<Game>();
 
