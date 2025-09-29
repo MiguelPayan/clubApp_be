@@ -1,8 +1,12 @@
-﻿namespace ClubApp.DTOs.Players
+﻿using ClubApp.Models;
+
+namespace ClubApp.Models.DTOs.Players
 {
-    public class AddingPlayersDTO
+    public class PlayerDto
     {
-        //This DTO is only used for poblating the database
+        public int Id { get; set; }
+
+        public int? TeamId { get; set; }
 
         public string? PhotoSrc { get; set; }
 
@@ -14,9 +18,9 @@
 
         public int? OverallRating { get; set; }
 
-        public string? Potential { get; set; }
+        public int? Potential { get; set; }
 
-        public string? MarketValue { get; set; }
+        public double? MarketValue { get; set; }
 
         public int? Shooting { get; set; }
 
@@ -39,6 +43,10 @@
         public double? PositionY { get; set; }
 
         public bool? IsStarting { get; set; }
+
+        public virtual ICollection<Offer> Offers { get; set; } = new List<Offer>();
+
+        public virtual Team? Team { get; set; }
 
     }
 }

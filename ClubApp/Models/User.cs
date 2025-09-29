@@ -17,6 +17,8 @@ public partial class User
 
     public string? GoogleId { get; set; }
 
+    public string PasswordHash { get; set; } = null!;
+
     public virtual Budget? Budget { get; set; }
 
     public virtual ICollection<Cup> Cups { get; set; } = new List<Cup>();

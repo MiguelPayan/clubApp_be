@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using ClubApp.DTOs.Players;
 using ClubApp.Models;
+using ClubApp.Models.DTOs.Players;
 
 namespace ClubApp.Mappers
 {
@@ -8,12 +8,7 @@ namespace ClubApp.Mappers
     {
         public FifaMapper()
         {
-            CreateMap<Player, PlayerDto>();
-            CreateMap<PlayerDto, Player>();
-            CreateMap<AddingFixedPlayersDTO, PlayerDto>();
-            CreateMap<PlayerDto, AddingFixedPlayersDTO>();
-            CreateMap<AddingFixedPlayersDTO, Player>();
-            CreateMap<Player, AddingFixedPlayersDTO>();
+            CreateMap<Player, PlayerDto>().ReverseMap();
         }
     }
 }

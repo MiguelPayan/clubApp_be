@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Bijb5TmZ3umJiu4Gtssn6ApwxAQSfYU3hjjyQ75EV1Y=",
+  "Hash": "SqaoCoAbIir73upBBlMNM3pGRCL2A+Q3Yv9bfUOAA1A=",
   "Source": "ClubApp",
   "BasePath": "_content/ClubApp",
   "Mode": "Default",
@@ -31,14 +31,59 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vs17fuxd5e",
-      "Integrity": "3/s75gXz5tZ2ntvktw1fd4Y57Ys+x3XhZelU4d/gTeI=",
+      "Fingerprint": "9j41nfpqbh",
+      "Integrity": "NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ+/a34=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\players.json"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "data/players.9j41nfpqbh.json",
+      "AssetFile": "C:\\Users\\Miguel\\source\\repos\\ClubApp\\ClubApp\\wwwroot\\data\\players.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "407675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ+/a34=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 04 May 2025 05:48:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9j41nfpqbh"
+        },
+        {
+          "Name": "label",
+          "Value": "data/players.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ+/a34="
+        }
+      ]
+    },
     {
       "Route": "data/players.json",
       "AssetFile": "C:\\Users\\Miguel\\source\\repos\\ClubApp\\ClubApp\\wwwroot\\data\\players.json",
@@ -58,11 +103,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3/s75gXz5tZ2ntvktw1fd4Y57Ys+x3XhZelU4d/gTeI=\""
+          "Value": "\"NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ+/a34=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 04:45:19 GMT"
+          "Value": "Sun, 04 May 2025 05:48:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -72,52 +117,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3/s75gXz5tZ2ntvktw1fd4Y57Ys+x3XhZelU4d/gTeI="
-        }
-      ]
-    },
-    {
-      "Route": "data/players.vs17fuxd5e.json",
-      "AssetFile": "C:\\Users\\Miguel\\source\\repos\\ClubApp\\ClubApp\\wwwroot\\data\\players.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "407675"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3/s75gXz5tZ2ntvktw1fd4Y57Ys+x3XhZelU4d/gTeI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 04:45:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vs17fuxd5e"
-        },
-        {
-          "Name": "label",
-          "Value": "data/players.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3/s75gXz5tZ2ntvktw1fd4Y57Ys+x3XhZelU4d/gTeI="
+          "Value": "sha256-NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ+/a34="
         }
       ]
     }

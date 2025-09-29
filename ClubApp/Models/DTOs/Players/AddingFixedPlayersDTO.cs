@@ -1,8 +1,8 @@
-﻿namespace ClubApp.DTOs.Players
+﻿namespace ClubApp.Models.DTOs.Players
 {
-    public class PlayerDto
+    public class AddingFixedPlayersDTO
     {
-        public string? TeamName { get; set; }
+        //This DTO is only used for poblating the database
 
         public string? PhotoSrc { get; set; }
 

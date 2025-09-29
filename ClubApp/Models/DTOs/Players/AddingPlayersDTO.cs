@@ -1,6 +1,6 @@
-﻿namespace ClubApp.DTOs.Players
+﻿namespace ClubApp.Models.DTOs.Players
 {
-    public class AddingFixedPlayersDTO
+    public class AddingPlayersDTO
     {
         //This DTO is only used for poblating the database
 
@@ -14,9 +14,9 @@
 
         public int? OverallRating { get; set; }
 
-        public int? Potential { get; set; }
+        public string? Potential { get; set; }
 
-        public double? MarketValue { get; set; }
+        public string? MarketValue { get; set; }
 
         public int? Shooting { get; set; }
 

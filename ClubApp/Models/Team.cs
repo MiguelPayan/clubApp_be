@@ -9,7 +9,7 @@ public partial class Team
 
     public string? Teamname { get; set; }
 
-    public string? OwneruserId { get; set; }
+    public int? OwneruserId { get; set; }
 
     public byte[] CreatedAt { get; set; } = null!;
 
@@ -21,7 +21,7 @@ public partial class Team
 
     public virtual ICollection<Offer> OfferToTeams { get; set; } = new List<Offer>();
 
-    public virtual ClubUserApp? Owneruser { get; set; }
+    public virtual User? Owneruser { get; set; }
 
     public virtual ICollection<Player> Players { get; set; } = new List<Player>();
 

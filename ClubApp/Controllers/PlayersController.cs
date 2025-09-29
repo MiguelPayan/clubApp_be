@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using ClubApp.DTOs.Players;
+using ClubApp.Models.DTOs.Players;
 using ClubApp.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,31 +18,45 @@ namespace ClubApp.Controllers
             _playerRepository = playerRepository;
             _mapper = mapper;
         }
-
-        [HttpGet("getPlayers")]
+        [Authorize]
+        [HttpGet("Players/GetAll")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult GetPlayers()
         {
-            var players = _playerRepository.GetPlayers();
-            if (players == null || players.Count == 0)
-            {
-                return NotFound("No players found.");
-            }
-            var playerDtos = _mapper.Map<ICollection<PlayerDto>>(players);
-            return Ok(playerDtos);
+            var player = _playerRepository.GetPlayers();
+            var playerDto = _mapper.Map<ICollection<PlayerDto>>(player);
+            return Ok(playerDto);
         }
 
-        [HttpGet("addPlayersToDb")]
-        public IActionResult AddPlayersDb()
+        [HttpGet("Players/GetById")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public IActionResult GetPlayerById(int id)
         {
-            var addingPlayers = _playerRepository.AddPlayersDb();
-            if (addingPlayers)
+            var player = _playerRepository.GetPlayerById(id);
+            if (player == null)
             {
-                return Ok("Done");
+                return NotFound();
             }
-            else
-            {
-                return BadRequest("Error");
-            }
+            var playerDto = _mapper.Map<PlayerDto>(player);
+            return Ok(playerDto);
         }
+
+        [HttpGet("Players/GetByName")]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public IActionResult GetPlayerByName(string playerName)
+        {
+            var player = _playerRepository.GetPlayersByName(playerName);
+            if (player == null)
+            {
+                return NotFound();
+            }
+            var playerDto = _mapper.Map<ICollection<PlayerDto>>(player);
+            return Ok(playerDto);
+        }
+
+
     }
 }

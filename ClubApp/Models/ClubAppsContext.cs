@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClubApp.Models;
 
-public partial class ClubAppsContext : IdentityDbContext<ClubUserApp>
+public partial class ClubAppsContext : DbContext
 {
     public ClubAppsContext()
     {
@@ -16,10 +15,30 @@ public partial class ClubAppsContext : IdentityDbContext<ClubUserApp>
     {
     }
 
+    public virtual DbSet<Budget> Budgets { get; set; }
+
+    public virtual DbSet<Cup> Cups { get; set; }
+
+    public virtual DbSet<Game> Games { get; set; }
+
+    public virtual DbSet<Offer> Offers { get; set; }
+
+    public virtual DbSet<OffersStatus> OffersStatuses { get; set; }
+
+    public virtual DbSet<Player> Players { get; set; }
+
+    public virtual DbSet<Standing> Standings { get; set; }
+
+    public virtual DbSet<Team> Teams { get; set; }
+
+    public virtual DbSet<User> Users { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=MINITOY10;Database=clubApps;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Budget>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__budget__3213E83F8E13C09C");
@@ -257,30 +276,6 @@ public partial class ClubAppsContext : IdentityDbContext<ClubUserApp>
 
         OnModelCreatingPartial(modelBuilder);
     }
-
-
-    public virtual DbSet<Budget> Budgets { get; set; }
-
-    public virtual DbSet<Cup> Cups { get; set; }
-
-    public virtual DbSet<Game> Games { get; set; }
-
-    public virtual DbSet<Offer> Offers { get; set; }
-
-    public virtual DbSet<OffersStatus> OffersStatuses { get; set; }
-
-    public virtual DbSet<Player> Players { get; set; }
-
-    public virtual DbSet<Standing> Standings { get; set; }
-
-    public virtual DbSet<Team> Teams { get; set; }
-
-    public virtual DbSet<User> Users { get; set; }
-    public virtual DbSet<ClubUserApp> ClubUsers { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=SQL1002.site4now.net;Database=db_ab9293_clubapp;User Id=db_ab9293_clubapp_admin;Password=minitoy57;");
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

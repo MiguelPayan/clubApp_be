@@ -1,10 +1,14 @@
-﻿using ClubApp.Models;
+﻿
+
+using ClubApp.Models;
 
 namespace ClubApp.Repositories.Interfaces
 {
     public interface IPlayerRepository
     {
         ICollection<Player> GetPlayers();
-        bool AddPlayersDb();
+        Player GetPlayerById(int id);
+
+        ICollection<Player> GetPlayersByName(string playerName);
     }
 }

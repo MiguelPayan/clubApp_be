@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/ClubApp/data/players.9j41nfpqbh.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\players.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9j41nfpqbh"},{"Name":"integrity","Value":"sha256-NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ\u002B/a34="},{"Name":"label","Value":"_content/ClubApp/data/players.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"407675"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ\u002B/a34=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 05:48:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ClubApp/data/players.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\players.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3/s75gXz5tZ2ntvktw1fd4Y57Ys\u002Bx3XhZelU4d/gTeI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"407675"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00223/s75gXz5tZ2ntvktw1fd4Y57Ys\u002Bx3XhZelU4d/gTeI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 04:45:19 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ClubApp/data/players.vs17fuxd5e.json">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\players.json'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vs17fuxd5e"},{"Name":"integrity","Value":"sha256-3/s75gXz5tZ2ntvktw1fd4Y57Ys\u002Bx3XhZelU4d/gTeI="},{"Name":"label","Value":"_content/ClubApp/data/players.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"407675"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u00223/s75gXz5tZ2ntvktw1fd4Y57Ys\u002Bx3XhZelU4d/gTeI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 04:45:19 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ\u002B/a34="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"407675"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ\u002B/a34=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 05:48:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

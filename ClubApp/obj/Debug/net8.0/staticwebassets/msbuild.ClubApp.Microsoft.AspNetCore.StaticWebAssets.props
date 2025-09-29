@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vs17fuxd5e</Fingerprint>
-      <Integrity>3/s75gXz5tZ2ntvktw1fd4Y57Ys+x3XhZelU4d/gTeI=</Integrity>
+      <Fingerprint>9j41nfpqbh</Fingerprint>
+      <Integrity>NfCXC0H8FuJjaVL/23Gw1n/wWpLsxzE6slnlcZ+/a34=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\players.json'))</OriginalItemSpec>

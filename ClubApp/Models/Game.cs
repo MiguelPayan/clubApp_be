@@ -19,11 +19,11 @@ public partial class Game
 
     public bool? IsFinished { get; set; }
 
-    public string? FinishedByUserId { get; set; }
+    public int? FinishedByUserId { get; set; }
 
     public virtual Cup? Cup { get; set; }
 
-    public virtual ClubUserApp? FinishedByUser { get; set; }
+    public virtual User? FinishedByUser { get; set; }
 
     public virtual Team? TeamA { get; set; }
 
